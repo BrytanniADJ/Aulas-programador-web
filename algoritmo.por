@@ -3,19 +3,21 @@ programa
 	inclua biblioteca Matematica
 	funcao inicio()
 	{
-		inteiro sala = 0, reaj = 0, salaf = 0, nov = 0
+		inteiro sala = 0, reaj = 0, salan = 0, nov1 = 0, nov2 = 0
 	
-		escreva("Salário mensal atual de um funcionário: ") // \n
+		escreva("Salário mensal atual de um funcionário: ") // \n
 		leia(sala)
 
 		escreva("Escreva o percentual de reajuste: ")
 		leia(reaj) //numero da porcentagem
 
-		salaf = (sala * nov)
+		nov1 = (sala * reaj) //24000
+		nov2 = (nov1 / 100) //240
+		salan = (sala + nov2)
 
 		escreva("O valor inicial do funcionário: ",sala)
-		escreva("\n O percentual de reajuste: ",nov,"% \n")
-		escreva("O novo valor do funcionário: ",salaf)
+		escreva("\n O percentual de reajuste: ",reaj,"% \n")
+		escreva("O novo valor do funcionário: ",salan)
 	}
 }
 /* $$$ Portugol Studio $$$ 
